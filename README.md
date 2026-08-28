@@ -79,7 +79,7 @@ simulated games by default).
 To plug in the **real** competition environment instead of the
 simplified simulator, implement `game_state.from_raw_observation()` and
 replace `_apply_action_simplified()` in `dataset_generator.py` with calls
-into the actual environment's step function — the agent, evaluator, and
+into the actual environment's step function - the agent, evaluator, and
 feature code do not need to change.
 
 ## Baseline Model
@@ -134,5 +134,4 @@ strategic decisions, and adapts those decisions as a battle progresses.
 It also ships a synthetic dataset and training pipeline so the same
 codebase can grow from a rule-based baseline into a learned agent as
 more game data becomes available.
-# pokemon-tcg-ai-battle
-# pokemon-tcg-ai-battle
+
