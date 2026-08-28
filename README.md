@@ -3,7 +3,7 @@
 ## Project Overview
 This project explores the use of artificial intelligence and strategic
 decision-making to tackle the **Pokémon Trading Card Game AI Battle
-Challenge**. The goal is an agent that analyzes the current game state
+Challenge** on **Kaggle**. The goal is an agent that analyzes the current game state
 and selects effective actions during a battle, adapting to different
 situations rather than relying on a fixed strategy.
 
