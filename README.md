@@ -1,4 +1,4 @@
-# Pokémon TCG AI Battle Challenge — Strategy Agent
+# Pokémon TCG AI Battle Challenge - Strategy Agent
 
 ## Project Overview
 This project explores the use of artificial intelligence and strategic
@@ -26,19 +26,19 @@ pokemon-tcg-ai-battle/
 ## Approach
 The workflow mirrors the strategy outlined for the challenge:
 
-1. **Analyze the current game state** — `GameState` captures active/bench
+1. **Analyze the current game state** - `GameState` captures active/bench
    Pokémon, HP, energy, prizes, hand size, and turn context.
-2. **Identify all available actions** — `legal_actions()` enumerates
+2. **Identify all available actions** - `legal_actions()` enumerates
    attacks (with an energy-cost check), retreats, energy attachment,
    supporter plays, and bench development.
-3. **Evaluate the potential value and consequences of each action** —
+3. **Evaluate the potential value and consequences of each action** -
    `evaluate_state()` scores the overall board; `score_action()` scores
    each candidate move (damage output, knockout/lethal bonuses, risk of
    over-extending, tempo/setup value).
-4. **Select a strategy based on the current situation** —
+4. **Select a strategy based on the current situation** -
    `HeuristicAgent.choose_action()` ranks all legal actions and picks the
    best-scoring one; `explain_decision()` prints the reasoning.
-5. **Continuously adapt** — the same pipeline runs every turn against the
+5. **Continuously adapt** - the same pipeline runs every turn against the
    live state, so decisions naturally change as HP, energy, prizes, and
    board presence evolve.
 
@@ -103,11 +103,11 @@ candidate actions and chosen move, then generates a small sample
 dataset.
 
 ## Challenges
-* **Dynamic action space** — the number of legal actions changes turn to
+* **Dynamic action space** - the number of legal actions changes turn to
   turn (energy attached, bench size, hand contents), so a fixed strategy
   or fixed-size policy doesn't work; `legal_actions()` re-derives the
   space fresh every turn.
-* **Short-term vs. long-term trade-offs** — an immediately-strong action
+* **Short-term vs. long-term trade-offs** - an immediately-strong action
   (e.g., attacking now) can be worse than developing the board first;
   the weighted evaluator and the turn-based setup bonus address this
   directly.
