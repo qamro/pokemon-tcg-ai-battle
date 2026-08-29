@@ -90,3 +90,4 @@ def explain_decision(state: GameState, agent: HeuristicAgent, top_k: int = 3) ->
     for score, action in ranked:
         lines.append(f"  {action}  ->  score={score:.2f}")
     return "\n".join(lines)
+
