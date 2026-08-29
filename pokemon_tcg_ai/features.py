@@ -41,3 +41,4 @@ def featurize_state_action(state: GameState, action: Action) -> List[float]:
     ]
     one_hot = [1.0 if action.action_type == t else 0.0 for t in ACTION_TYPES]
     return base + one_hot
+
