@@ -59,7 +59,7 @@ def train(csv_path: str = "pokemon_tcg_battle_dataset.csv", model_out: str = "ac
     for name, imp in top_features:
         print(f"  {name}: {imp:.4f}")
 
-    joblib.dump({"model": model, "columns": list(X.columns)}, model_out)
+    joblib.dump({"model": model, "columns": list(X.columns)}, model_out) # save the model using joblib.dump()
     print(f"Saved model to {model_out}")
     return model
 
