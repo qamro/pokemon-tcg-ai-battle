@@ -201,3 +201,4 @@ if __name__ == "__main__":
     data = generate_dataset(n_games=500)
     save_dataset_csv(data, "pokemon_tcg_battle_dataset.csv")
     print(f"Generated {len(data)} rows across simulated games.")
+
