@@ -128,3 +128,4 @@ def _effective_damage(attack, defender: Pokemon) -> int:
     if defender.resistance and defender.resistance in attack.energy_cost:
         dmg = max(0, dmg - 20)
     return dmg
+
