@@ -99,3 +99,4 @@ def _has_enough_energy(attached: List[EnergyType], cost: List[EnergyType]) -> bo
             return False
 
     return len(remaining) >= colorless_cost
+
