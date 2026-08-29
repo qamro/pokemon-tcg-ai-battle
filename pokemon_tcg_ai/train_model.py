@@ -66,3 +66,4 @@ def train(csv_path: str = "pokemon_tcg_battle_dataset.csv", model_out: str = "ac
 
 if __name__ == "__main__":
     train()
+
