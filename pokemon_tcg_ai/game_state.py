@@ -106,3 +106,4 @@ def from_raw_observation(obs: dict) -> GameState:
     raise NotImplementedError(
         "Map the competition's raw observation schema to GameState here."
     )
+
